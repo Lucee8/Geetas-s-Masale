@@ -1,4 +1,4 @@
- /**
+/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -60,7 +60,7 @@ export default function Navbar({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className="flex items-center justify-between transition-all duration-300"
-          style={{ height: isScrolled ? '56px' : '72px' }}
+          style={{ height: isScrolled ? '72px' : '100px' }}
         >
           
           {/* Logo and Branding */}
@@ -74,7 +74,7 @@ export default function Navbar({
                 src="src/assets/images/logo.png"
                 alt="Geeta's Logo"
                 className="w-auto object-contain transition-all duration-300 hover:scale-[1.05]"
-                style={{ height: isScrolled ? '80px' : '100px' }}
+                style={{ height: isScrolled ? '54px' : '84px' }}
                 onError={() => setLogoError(true)}
                 referrerPolicy="no-referrer"
               />
