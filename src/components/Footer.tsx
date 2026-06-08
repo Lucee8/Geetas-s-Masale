@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { MessageSquare, Phone, MapPin, Compass, ArrowUp, Send, CheckCircle2 } from 'lucide-react';
+import logo from "../assets/images/logo.png";
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -45,7 +46,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               {!logoError ? (
                 <div className="bg-white/95 px-3.5 py-2.5 rounded-xl mr-3 shadow-[0_4px_12px_rgba(0,0,0,0.15)] flex items-center justify-center">
                   <img
-                    src="assets/images/logo.png" 
+                    src={logo}
                     alt="Geeta's Logo"
                     className="h-8 sm:h-9 w-auto object-contain transition-all hover:scale-[1.05]"
                     onError={() => setLogoError(true)}
@@ -54,9 +55,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 </div>
               ) : (
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-3 shadow-lg shrink-0">
-                    <span className="text-xl font-bold text-[#A61B1B] select-none">G</span>
-                  </div>
+
                   <div className="flex flex-col">
                     <span className="font-sans text-lg font-black tracking-widest text-[#FFF5E6] uppercase">
                       Geeta's <span className="text-white font-extrabold pb-0.5">Masale</span>
