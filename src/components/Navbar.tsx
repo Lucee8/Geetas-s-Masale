@@ -70,24 +70,32 @@ export default function Navbar({
             onClick={() => handleNavClick('hero')}
           >
             {!logoError ? (
-              <img
-                src="src/assets/images/logo.png"
-                alt="Geeta's Logo"
-                className="w-auto object-contain transition-all duration-300 hover:scale-[1.05]"
-                style={{ height: isScrolled ? '54px' : '84px' }}
-                onError={() => setLogoError(true)}
-                referrerPolicy="no-referrer"
-              />
+              <div className="flex items-center gap-3">
+                <img
+                  src="src/assets/images/logo.png"
+                  alt="Geeta's Logo"
+                  className="w-auto object-contain transition-all duration-300 hover:scale-[1.05]"
+                  style={{ height: isScrolled ? '54px' : '84px' }}
+                  onError={() => setLogoError(true)}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="flex flex-col leading-none select-none">
+                  <span className="font-sans text-xs font-black tracking-widest text-[#A61B1B] uppercase pb-0.5">
+                    GEETA'S
+                  </span>
+                  <span className="font-sans text-[21px] font-black tracking-wider text-[#0F172A] uppercase leading-none pb-1">
+                    MASALE
+                  </span>
+                  <span className="text-[7.5px] font-mono tracking-widest text-[#A61B1B] uppercase leading-normal font-bold">
+                    AUTHENTIC TASTE OF
+                  </span>
+                  <span className="text-[7.5px] font-mono tracking-widest text-[#A61B1B] uppercase leading-none font-bold">
+                    KONKAN
+                  </span>
+                </div>
+              </div>
             ) : (
               <div className="flex items-center">
-                <motion.div
-                  className="relative w-9 h-12 rounded-[1.25rem] bg-[#A61B1B] flex items-center justify-center mr-3 shrink-0 shadow-[0_4px_12px_rgba(166,27,27,0.18)] border border-white/10"
-                  whileHover={{ scale: 1.08 }}
-                >
-                  <span className="text-xl font-sans font-black select-none text-white tracking-widest pr-0.5">G</span>
-                  <div className="absolute inset-0 rounded-[1.25rem] border border-white/20 animate-pulse opacity-25" />
-                </motion.div>
-                
                 <div className="flex flex-col leading-none select-none">
                   <span className="font-sans text-xs font-black tracking-widest text-[#A61B1B] uppercase pb-0.5">
                     GEETA'S
