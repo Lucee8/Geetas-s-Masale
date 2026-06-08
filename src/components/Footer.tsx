@@ -45,28 +45,19 @@ export default function Footer({ onNavigate }: FooterProps) {
              <div className="flex items-center cursor-pointer" onClick={handleScrollToTop}>
               {!logoError ? (
                 <div className="bg-white/95 px-3.5 py-2.5 rounded-xl mr-3 shadow-[0_4px_12px_rgba(0,0,0,0.15)] flex items-center justify-center">
-                  <img
-                    src={logo}
-                    alt="Geeta's Logo"
-                    className="h-8 sm:h-9 w-auto object-contain transition-all hover:scale-[1.05]"
-                    onError={() => setLogoError(true)}
-                    referrerPolicy="no-referrer"
-                  />
+                 <img
+  src={logo}
+  alt="Geeta's Logo"
+  className="w-auto object-contain transition-all duration-300 hover:scale-[1.05]"
+  style={{ height: isScrolled ? '90px' : '100px' }}
+  onError={() => setLogoError(true)}
+  referrerPolicy="no-referrer"
+/>
                 </div>
               ) : (
                 <div className="flex items-center">
 
-                  <div className="flex flex-col">
-                    <span className="font-sans text-lg font-black tracking-widest text-[#FFF5E6] uppercase">
-                      Geeta's <span className="text-white font-extrabold pb-0.5">Masale</span>
-                    </span>
-                    <span className="text-[8px] font-mono tracking-widest text-rose-100/50 uppercase">
-                      Authentic Taste of Konkan
-                    </span>
-                  </div>
-                </div>
-              )}
-            </div>
+                  
 
             <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-sans max-w-sm">
               We deliver elite Malvani spices, hand-rolled sweet laddoos, premium parboiled rice, sun-dried kokum sole, and gourmet cashew nuts crafted using generation-old recipes directly from Kasal, Malvan.
