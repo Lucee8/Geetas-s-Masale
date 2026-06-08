@@ -42,21 +42,20 @@ export default function Footer({ onNavigate }: FooterProps) {
           
           {/* Box 1: Brand description, tagline, social icons */}
           <div className="lg:col-span-4 space-y-6">
-             <div className="flex items-center cursor-pointer" onClick={handleScrollToTop}>
+            <div className="flex items-center cursor-pointer" onClick={handleScrollToTop}>
               {!logoError ? (
                 <div className="bg-white/95 px-3.5 py-2.5 rounded-xl mr-3 shadow-[0_4px_12px_rgba(0,0,0,0.15)] flex items-center justify-center">
                   <img
-  src={logo}
-  alt="Geeta's Logo"
-  className="w-auto object-contain transition-all duration-300 hover:scale-[1.05]"
-  style={{ height: isScrolled ? '90px' : '100px' }}
-  onError={() => setLogoError(true)}
-  referrerPolicy="no-referrer"
-/>
+                    src={logo}
+                    alt="Geeta's Logo"
+                    className="w-auto object-contain transition-all duration-300 hover:scale-[1.05]"
+                    style={{ height: '90px' }}
+                    onError={() => setLogoError(true)}
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
               ) : (
                 <div className="flex items-center">
-
                   <div className="flex flex-col">
                     <span className="font-sans text-lg font-black tracking-widest text-[#FFF5E6] uppercase">
                       Geeta's <span className="text-white font-extrabold pb-0.5">Masale</span>
@@ -162,7 +161,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             </ul>
           </div>
 
-          {/* Box 4: Newsletter newsletter sub */}
+          {/* Box 4: Newsletter sub */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-xs font-mono font-bold tracking-widest text-white uppercase">Aroma Catalog News</h4>
             <p className="text-xs text-white/80 leading-relaxed max-w-xs font-sans">
@@ -205,7 +204,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <p className="text-[9px] text-white/80">Directly Sourced inside Kasal-Malvan Rd, Maharashtra 416606</p>
           </div>
 
-          {/* Back to top bullet button */}
+          {/* Back to top button */}
           <button
             onClick={handleScrollToTop}
             className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg border border-white/10 hover:border-white/30 text-white/80 hover:text-white transition-all cursor-pointer"
