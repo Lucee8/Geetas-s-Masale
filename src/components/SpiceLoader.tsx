@@ -5,6 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'motion/react';
+import logo from "../assets/images/logo.png";
 
 interface SpiceLoaderProps {
   onComplete: () => void;
@@ -158,7 +159,7 @@ export default function SpiceLoader({ onComplete }: SpiceLoaderProps) {
             }}
           >
             <img
-              src="assets/images/logo.png"
+              src={logo}
               alt="Geeta's Masale Logo"
               className="w-52 object-contain"
               style={{
