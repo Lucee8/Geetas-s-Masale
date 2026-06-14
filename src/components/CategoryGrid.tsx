@@ -62,9 +62,10 @@ export default function CategoryGrid({ onSelectCategory }: CategoryGridProps) {
                 <img
                   src={cat.image}
                   alt={cat.name}
-              className="w-full h-full object-cover transition-all duration-[600ms] group-hover:scale-110 filter saturate-[0.95] group-hover:saturate-[1.05] brightness-[0.75] group-hover:brightness-[0.95]"
+                  className="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 filter saturate-[0.8] group-hover:saturate-[1.1] brightness-[0.4] group-hover:brightness-[0.3]"
                   referrerPolicy="no-referrer"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent opacity-85 transition-opacity group-hover:opacity-90" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-[#A61B1B]/10 mix-blend-multiply transition-colors group-hover:bg-[#A61B1B]/0" />
               </div>
 
               {/* Card content with 3D translation */}

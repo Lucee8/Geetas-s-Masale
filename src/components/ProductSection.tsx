@@ -265,15 +265,15 @@ Please confirm availability and sharing banking details for packing. Thanks!`;
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.4 }}
-                  className="bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl border border-gray-100 flex flex-col justify-between group h-[400px] sm:h-[520px]"
+                  className="bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl border border-gray-100 flex flex-col justify-between group h-[480px] sm:h-[600px]"
                 >
                   {/* Photo container with zoom and badge */}
-                  <div className="relative h-36 sm:h-56 bg-gray-50 overflow-hidden shrink-0">
+                  <div className="relative h-60 sm:h-80 bg-white overflow-hidden shrink-0 p-3 sm:p-5 flex items-center justify-center">
                     <img
                       src={p.image}
                       alt={p.name}
                       onClick={() => handleOpenModal(p)}
-                      className="w-full h-full object-cover group-hover:scale-110 duration-700 ease-out cursor-pointer"
+                      className="w-full h-full object-contain group-hover:scale-105 duration-700 ease-out cursor-pointer"
                       referrerPolicy="no-referrer"
                     />
 
@@ -383,22 +383,22 @@ Please confirm availability and sharing banking details for packing. Thanks!`;
             >
               
               {/* Left Column: Photo Presentation */}
-              <div className="md:w-1/2 relative bg-gray-50 h-64 md:h-auto min-h-[250px] md:min-h-[450px]">
+              <div className="md:w-1/2 relative bg-white h-72 md:h-auto min-h-[320px] md:min-h-[480px] p-6 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-gray-150">
                 <img
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full max-h-[380px] object-contain drop-shadow-md rounded-lg"
                   referrerPolicy="no-referrer"
                 />
                 
                 {/* Visual highlights */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none rounded-b-3xl md:rounded-l-3xl md:rounded-br-none" />
 
-                <div className="absolute bottom-4 left-4 text-white">
-                  <span className="text-[10px] font-mono tracking-widest text-amber-200 uppercase">
-                    {selectedProduct.category} Collection
+                <div className="absolute bottom-4 left-4 right-4 text-white z-10 text-left">
+                  <span className="text-[10px] font-mono tracking-widest text-[#FFF] uppercase bg-[#A61B1B]/90 px-2 py-0.5 rounded-full inline-block mb-1">
+                     {selectedProduct.category} Collection
                   </span>
-                  <h3 className="font-sans text-2xl font-black uppercase text-white mt-1">
+                  <h3 className="font-sans text-xl sm:text-2xl font-black uppercase text-white leading-tight">
                     {selectedProduct.name}
                   </h3>
                 </div>

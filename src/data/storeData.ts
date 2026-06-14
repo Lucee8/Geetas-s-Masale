@@ -4,6 +4,9 @@
  */
 
 import { Product, Recipe, Testimonial, GalleryItem } from '../types';
+import malvaniSundayMasala from '../assets/images/Masale/malvani spl Sunday masala.webp';
+import kandaLasunMasala from '../assets/images/Masale/Malvani fish fry masala.webP';
+
 
 export const CATEGORIES = [
   {
@@ -13,6 +16,7 @@ export const CATEGORIES = [
     image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&auto=format&fit=crop&q=80',
     count: 11
   },
+
   {
     id: 'Pith',
     name: 'Traditional Flours (Pith)',
@@ -20,6 +24,7 @@ export const CATEGORIES = [
     image: 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&auto=format&fit=crop&q=80',
     count: 7
   },
+
   {
     id: 'Malvani products',
     name: 'Konkan Specialties & Meva',
@@ -27,6 +32,7 @@ export const CATEGORIES = [
     image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=600&auto=format&fit=crop&q=80',
     count: 11
   },
+
   {
     id: 'Laddoos',
     name: 'Handmade Laddoos',
@@ -34,6 +40,7 @@ export const CATEGORIES = [
     image: 'https://images.unsplash.com/photo-1581781868311-6415779c13dd?w=600&auto=format&fit=crop&q=80',
     count: 4
   },
+
   {
     id: 'Kaju',
     name: 'Premium Malvan Cashews (Kaju)',
@@ -57,8 +64,8 @@ export const PRODUCTS: Product[] = [
     usage: 'Add 2-3 tablespoons during the gravy tempering phase. Cook on low heat to release slow-roasted essential oils.',
     shelfLife: '12 Months',
     notes: 'No artificial colors, preservatives, or added MSG. Strictly vegetarian.',
-    image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&auto=format&fit=crop&q=80'
-  },
+    image: malvaniSundayMasala  
+},
   {
     id: 'm2',
     category: 'Masale',
@@ -71,7 +78,7 @@ export const PRODUCTS: Product[] = [
     usage: 'Mix with lime juice or kokum water to make a paste. Generously coat fish slices, dust with semolina, and shallow fry.',
     shelfLife: '12 Months',
     notes: 'Specially crafted for Pomfret, Surmai, Bangda, and prawns.',
-    image: 'https://images.unsplash.com/photo-1624462966581-bc6d768cbce5?w=600&auto=format&fit=crop&q=80'
+    image: kandaLasunMasala     
   },
   {
     id: 'm3',
